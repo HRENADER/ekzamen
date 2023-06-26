@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Lora';
+    src: url("../fonts/Lora.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lora-Italic';
+    src: url('../fonts/Lora-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.menu {
+    position: absolute;
+    left: 40px;
+    font-family: "Lora";
+    font-size: 20px;
+}
+
+nav {
+    width: 300px;
+    background: white;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-clip-path: circle(45px at 40px 0px);
+    -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    }
+
+nav:hover {
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-clip-path: circle(350px at 285px 30px);
+  clip-path: circle(390px at 150px 24px);
+}
+
+a {
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: inherit;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Lora';
+  font-size: 20px;
+}
+
+a:hover { background: white; }
+
+a:active { background: white; }
+
+.navicon {
+  padding: 15px 10px;
+  cursor: pointer;
+  -webkit-transform-origin: 32px 24px;
+  -ms-transform-origin: 32px 24px;
+  transform-origin: 32px 24px;
+  font-family: 'Lora';
+  font-size: 20px;
+}
+
+.navicon div {
+  position: relative;
+  width: 20px;
+  height: 2px;
+}
+
+.navicon div:before,
+.navicon div:after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: absolute;
+}
+
+.navicon div:before { top: -7px; }
+
+.navicon div:after { top: 7px; }
+
+.close {
+    right: 20px;
+    top: 30px;
+    position: absolute;
+    font-family: "Lora";
+    font-size: 20px;   
+}
+
+.head {
+    font-family: 'Ubuntu';
+    position: absolute;
+    width: 700px;
+    height: 43px;
+    left: 170px;
+    top: 85px;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.description {
+    position: absolute;
+    width: 1240px;
+    height: 180px;
+    left: 170px;
+    top: 160px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: justify;
+    color: #AFAFAF;
+    font-family: 'Lora';
+}
+
+a {
+text-decoration:none; 
+display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный */
+line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+color:black;
+margin: -12px;
+}
+a:after {
+display: block; /*превращаем его в блочный элемент*/
+content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+height: 2px; /*задаём высоту линии*/
+width: 0%; /*задаём начальную ширину элемента (линии)*/
+background-color: black; /*цвет фона элемента*/
+transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+a:hover:after,
+a:focus:after {
+width: 100%;
+}
+a:hover {
+color:black;
+} 
+
+.form {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.success {
+  position: absolute;
+  margin: 550px 710px;
+  width: 300px;
+}
+
+.errors {
+  position: absolute;
+  margin: 550px 600px;
+  width: 300px;
+}
+
+h2 {
+  position: absolute;
+  top: 500px;
+  left: 670px;
+  font-family: 'Lora';
+  font-weight: 300;
+
+}

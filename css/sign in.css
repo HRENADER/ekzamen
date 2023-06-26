@@ -1,0 +1,263 @@
+nav {
+    width: 300px;
+    background: white;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-clip-path: circle(45px at 40px 0px);
+    -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    }
+    
+nav:hover {
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.75s;
+    transition-duration: 0.75s;
+    -webkit-clip-path: circle(500px at 400px 70px);
+    clip-path: circle(550px at 350px 40px);
+    }
+
+.index {
+    position: absolute;
+    top: 55px;
+    left: 3px;
+}
+
+.catalog {
+    position: absolute;
+    top: 80px;
+    left: 3px;
+}
+    
+a {
+    display: block;
+    line-height: 50px;
+    padding: 0 20px;
+    color: inherit;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Lora';
+    font-size: 20px;
+    }
+    
+a:hover { background: white; }
+    
+a:active { background: white; }
+    
+.navicon {
+    padding: 15px 10px;
+    cursor: pointer;
+    -webkit-transform-origin: 32px 24px;
+    -ms-transform-origin: 32px 24px;
+    transform-origin: 32px 24px;
+    font-family: 'Lora';
+    font-size: 20px;
+    }
+    
+.navicon div {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    }
+    
+.navicon div:before,
+.navicon div:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    }
+    
+.navicon div:before { top: -7px; }
+    
+.navicon div:after { top: 7px; }
+a {
+    text-decoration:none;
+    display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный */
+    line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+    color:black;
+    margin: -12px;
+    }
+a:after {
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 2px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: black; /*цвет фона элемента*/
+    transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+    }
+a:hover:after,
+a:focus:after {
+    width: 100%;
+    }
+a:hover {
+    color:black;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;	
+        font-family: 'Ubuntu', 'Lora';
+    }
+    
+    .button__text {
+        color: black;
+    }
+    .container {
+        text-align: center;
+        display: flex;
+        align-items: top;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    .screen__content {
+        z-index: 1;
+        position: relative;	
+        height: 50%;
+    }
+    
+    .screen__background__shape {
+        transform: rotate(45deg);
+        position: absolute;
+    }
+    
+    .screen__background__shape1 {
+        height: 520px;
+        width: 520px;
+        background: #FFF;	
+        top: -50px;
+        right: 120px;	
+        border-radius: 0 72px 0 0;
+    }
+    
+    .login {
+        width: 325px;
+        padding: 30px;
+        padding-top: 156px;
+    }
+    
+    .login__field {
+        padding: 20px 0px;	
+        position: relative;	
+    }
+    
+    
+    .login__input {
+        border: none;
+        border-bottom: 2px solid #D1D1D4;
+        background: none;
+        padding: 10px;
+        padding-left: 24px;
+        font-weight: 700;
+        width: 75%;
+        transition: .2s;
+    }
+    
+    .login__input:active,
+    .login__input:focus,
+    .login__input:hover {
+        outline: none;
+        border-bottom-color: black;
+    }
+    
+    .login__submit {
+        background: #fff;
+        font-size: 14px;
+        margin-top: 30px;
+        padding: 16px 20px;
+        border-radius: 26px;
+        border: 1px solid #D4D3E8;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        color: black;
+        box-shadow: 0px 2px 2px black;
+        cursor: pointer;
+        transition: .2s;
+    }
+    
+    .login__submit:active,
+    .login__submit:focus,
+    .login__submit:hover {
+        border-color: black;
+        outline: none;
+    }
+    
+    .button__icon {
+        font-size: 24px;
+        margin-left: auto;
+        color: black;
+        text-align: center;
+    }
+    
+    .social-login {	
+        position: absolute;
+        height: 140px;
+        width: 160px;
+        text-align: center;
+        bottom: 0px;
+        right: 0px;
+        color: #fff;
+    }
+    
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+      
+    span {
+        width: 100%;
+        text-align: center;
+    }
+
+    .success {
+        position: absolute;
+        top: 500px;
+        text-align: center;
+        width: 100vw;
+        color: black;
+        font-family: 'Lora';
+        font-size: 20px;
+    } 
+
+    .errors {
+        position: absolute;
+        top: 500px;
+        text-align: center;
+        width: 100vw;
+        color: black;
+        font-family: 'Lora';
+        font-size: 20px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .footer {
+        font-family: 'Lora';
+        top: 700px;
+        left: 1060px;
+        width: 420px;
+        height: 50px;
+        position: absolute;
+        font-size: 30px;
+        font-weight: 450;
+    }
+    
+    .line {
+        border-top: 2px solid black;
+        top: 650px;
+        text-align: center;
+        position: absolute;
+        width: 730px;
+        left: 750px;
+    }

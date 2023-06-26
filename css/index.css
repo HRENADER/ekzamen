@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'Lora';
+    src: url("../fonts/Lora.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lora-Italic';
+    src: url('../fonts/Lora-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.menu {
+    position: absolute;
+    left: 40px;
+    font-family: "Lora";
+    font-size: 20px;
+}
+
+nav {
+  width: 300px;
+  background: white;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-clip-path: circle(30px at 36px 30px);
+  -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+  transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+}
+
+nav:hover {
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-clip-path: circle(350px at 285px 30px);
+  clip-path: circle(390px at 150px 24px);
+}
+
+a {
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: inherit;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Lora';
+  font-size: 20px;
+}
+
+a:hover { background: white; }
+
+a:active { background: white; }
+
+.navicon {
+  padding: 15px 10px;
+  cursor: pointer;
+  -webkit-transform-origin: 32px 24px;
+  -ms-transform-origin: 32px 24px;
+  transform-origin: 32px 24px;
+  font-family: 'Lora';
+  font-size: 20px;
+}
+
+.navicon div {
+  position: relative;
+  width: 20px;
+  height: 2px;
+}
+
+.navicon div:before,
+.navicon div:after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: absolute;
+}
+
+.navicon div:before { top: -7px; }
+
+.navicon div:after { top: 7px; }
+
+.close {
+    right: 20px;
+    top: 30px;
+    position: absolute;
+    font-family: "Lora";
+    font-size: 20px;   
+}
+
+.head {
+    font-family: 'Ubuntu';
+    position: absolute;
+    width: 700px;
+    height: 43px;
+    left: 170px;
+    top: 85px;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.description {
+    position: absolute;
+    width: 1240px;
+    height: 180px;
+    left: 170px;
+    top: 160px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: justify;
+    color: #AFAFAF;
+    font-family: 'Lora';
+}
+
+.image-one {
+    position: absolute;
+    left: 45px;
+    top: 530px;
+}
+
+.img1{
+    width: 1400px;
+    height: 730px;
+}
+
+.quote {
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    left: 80px;
+    top: 1300px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 63px;
+    line-height: 60px;
+    font-family: 'Lora-Italic';
+}
+
+.mark1 {
+    font-family:'Lora';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 61px;
+    top: 1300px;
+    left: 30px;
+    position: absolute;
+}
+
+.mark2 {
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 61px;
+    top: 1500px;
+    left: 895px;
+    position: absolute;
+}
+
+.image-two {
+    position: absolute;
+    left: 970px;
+    top: 1285px;
+}
+
+.img2 {
+    width: 470px;
+    height: 270px;
+}
+
+.experience {
+    font-family: 'Ubuntu';
+    position: absolute;
+    width: 350px;
+    height: 43px;
+    left: 1033px;
+    top: 1630px;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.txt-exp {
+    font-family: 'Lora';
+    position: absolute;
+    top: 1730px;
+    left: 950px;
+    width: 500px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: justify;
+    color: #AFAFAF;
+}
+
+.image-three {
+    position: absolute;
+    top: 1800px;
+    left: 45px;
+}
+
+.img3 {
+    width: 400px;
+    height: 400px;
+}
+
+.image-four {
+    position: absolute;
+    top: 2255px;
+    left: 45px;
+}
+
+.img4 {
+    width: 400px;
+    height: 400px;
+}
+
+.image-five {
+    position: absolute;
+    top: 2030px;
+    left: 500px;
+}
+
+.img5 {
+    width: 400px;
+    height: 400px;
+}
+
+.txt-statistics1 {
+    font-family: 'Ubuntu';
+    top: 2600px;
+    left: 970px;
+    width: 200px;
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+     font-weight: 400;
+}
+.number-statistics1 {
+    font-family: 'Ubuntu';
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.txt-statistics2 {
+    font-family: 'Ubuntu';
+    top: 2600px;
+    left: 1270px;
+    width: 200px;
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+.number-statistics2 {
+    font-family: 'Ubuntu';
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.footer {
+    font-family: 'Lora';
+    top: 2950px;
+    left: 1060px;
+    width: 420px;
+    height: 100px;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 450;
+}
+
+.line {
+    border-top: 2px solid black;
+    top: 2900px;
+    text-align: center;
+    position: absolute;
+    width: 730px;
+    left: 750px;
+}
+
+a {
+text-decoration:none; 
+display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный */
+line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+color:black;
+margin: -12px;
+}
+a:after {
+display: block; /*превращаем его в блочный элемент*/
+content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+height: 2px; /*задаём высоту линии*/
+width: 0%; /*задаём начальную ширину элемента (линии)*/
+background-color: black; /*цвет фона элемента*/
+transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+a:hover:after,
+a:focus:after {
+width: 100%;
+}
+a:hover {
+color:black;
+} 
+
+
+

@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'Lora';
+    src: url("../fonts/Lora.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lora-Italic';
+    src: url('../fonts/Lora-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.menu {
+    position: absolute;
+    left: 40px;
+    font-family: "Lora";
+    font-size: 20px;
+}
+
+nav {
+    width: 300px;
+    background: white;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-clip-path: circle(45px at 40px 0px);
+    -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    }
+
+nav:hover {
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-clip-path: circle(350px at 285px 30px);
+  clip-path: circle(390px at 150px 24px);
+}
+
+a {
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: inherit;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Lora';
+  font-size: 20px;
+}
+
+a:hover { background: white; }
+
+a:active { background: white; }
+
+.navicon {
+  padding: 15px 10px;
+  cursor: pointer;
+  -webkit-transform-origin: 32px 24px;
+  -ms-transform-origin: 32px 24px;
+  transform-origin: 32px 24px;
+  font-family: 'Lora';
+  font-size: 20px;
+}
+
+.navicon div {
+  position: relative;
+  width: 20px;
+  height: 2px;
+}
+
+.navicon div:before,
+.navicon div:after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: absolute;
+}
+
+.navicon div:before { top: -7px; }
+
+.navicon div:after { top: 7px; }
+
+.close {
+    right: 20px;
+    top: 30px;
+    position: absolute;
+    font-family: "Lora";
+    font-size: 20px;   
+}
+
+.head {
+    font-family: 'Ubuntu';
+    position: absolute;
+    width: 700px;
+    height: 43px;
+    left: 170px;
+    top: 85px;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.description {
+    position: absolute;
+    width: 1240px;
+    height: 180px;
+    left: 170px;
+    top: 160px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: justify;
+    color: #AFAFAF;
+    font-family: 'Lora';
+}
+
+a {
+text-decoration:none; 
+display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный */
+line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+color:black;
+margin: -12px;
+}
+a:after {
+display: block; /*превращаем его в блочный элемент*/
+content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+height: 2px; /*задаём высоту линии*/
+width: 0%; /*задаём начальную ширину элемента (линии)*/
+background-color: black; /*цвет фона элемента*/
+transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+a:hover:after,
+a:focus:after {
+width: 100%;
+}
+a:hover {
+color:black;
+} 
+
+.form {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.success {
+  position: absolute;
+  margin: 550px 500px;
+  width: 300px;
+}
+
+.errors {
+  position: absolute;
+  margin: 550px 600px;
+  width: 300px;
+}
+
+.wrappers {
+  position: absolute;
+  top: 100px;
+}
+
+.wrapper {
+  display: block;
+  width: 100%;
+	float: left;
+	transition: width .2s;
+    height: 420px;
+    width: 654px;
+    margin: 40px 40px;
+    border-radius: 7px 7px 7px 7px;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-img {
+    top: 20px;
+    float: left;
+    height: 420px;
+    width: 327px;
+  }
+  
+  .product-img img {
+    width: 327px;
+    height: 420px;
+    border-radius: 7px 0 0 7px;
+  }
+  
+  .product-info {
+    font-family: 'Ubuntu';
+    float: left;
+    height: 420px;
+    width: 327px;
+    border-radius: 0 7px 10px 7px;
+    background-color: #ffffff;
+  }
+  
+  .product-text {
+    height: 175px;
+    width: 327px;
+  }
+  
+  .product-text h1 {
+    font-family: 'Ubuntu';
+    padding-top: 52px;
+    font-size: 34px;
+    color: black;
+    text-align: center;
+  }
+  
+  .product-text h1,
+  .product-price-btn p {
+    font-family: 'Ubuntu', 'Lora';
+  }
+ 
+  .product-text p {
+    height: 75px;
+    margin: 0 0 0 38px;
+    font-family: 'Lora', serif;
+    color: #8d8d8d;
+    line-height: 1.7em;
+    font-size: 14px;
+    font-weight: lighter;
+    overflow: hidden;
+  } 
+  
+  .product-price-btn {
+    height: 103px;
+    width: 327px;
+    margin-top: 17px;
+    position: relative;
+  }
+  
+  .product-price-btn p {
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+    height: 50px;
+    font-family: 'Lora', serif;
+    margin: 0 0 0 110px;
+    font-size: 28px;
+    font-weight: lighter;
+    color: black;
+  }
+  
+  span {
+    display: inline-block;
+    height: 50px;
+    top: 10px;
+    font-family: 'Lora', serif;
+    font-size: 40px;
+  }
+  
+  .product-price-btn button {
+    float: right;
+    display: inline-block;
+    height: 65px;
+    width: 196px;
+    margin: 95px 60px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: black;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .product-price-btn button:hover {
+    background-color: #AFAFAF;
+    color: black;
+  }
